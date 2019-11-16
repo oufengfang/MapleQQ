@@ -1,0 +1,17 @@
+名称： CI
+P2PMapieQQ聊天软件
+开：[推送]
+
+职位：项目组组长
+  建立：
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run a one-line script
+      run: echo Hello, world!
+    - name: Run a multi-line script
+      run: |
+        echo Add other actions to build,
+        echo test, and deploy your project.
