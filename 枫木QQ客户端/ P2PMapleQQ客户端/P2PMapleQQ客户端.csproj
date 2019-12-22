@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{99AB75A9-0088-42BA-A265-42DF43863B1D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>P2PMapleQQ客户端</RootNamespace>
+    <AssemblyName>P2PMapleQQ客户端</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge">
+      <HintPath>..\..\AForge.NET Framework-2.2.5\Release\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Controls">
+      <HintPath>..\..\AForge.NET Framework-2.2.5\Release\AForge.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video">
+      <HintPath>..\..\AForge.NET Framework-2.2.5\Release\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>..\..\AForge.NET Framework-2.2.5\Release\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.FFMPEG">
+      <HintPath>..\..\AForge.NET Framework-2.2.5\Release\AForge.Video.FFMPEG.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jilu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jilu.Designer.cs">
+      <DependentUpon>jilu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member_photo_collection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member_photo_collection.designer.cs">
+      <DependentUpon>Member_photo_collection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Wenjiancaozuo.cs" />
+    <Compile Include="森\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="森\Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="森\Like.cs" />
+    <Compile Include="森\Resources.Designer.cs" />
+    <Compile Include="森\Settings.Designer.cs" />
+    <Compile Include="雷\DbTools.cs" />
+    <Compile Include="雷\imagPath.cs" />
+    <Compile Include="雷\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="雷\Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="雷\Registered.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="雷\Registered.designer.cs">
+      <DependentUpon>Registered.cs</DependentUpon>
+    </Compile>
+    <Compile Include="雷\Retrieve_password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="雷\Retrieve_password.designer.cs">
+      <DependentUpon>Retrieve_password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="鹏\Add friends.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="鹏\Add friends.designer.cs">
+      <DependentUpon>Add friends.cs</DependentUpon>
+    </Compile>
+    <Compile Include="鹏\Amend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="鹏\Amend.designer.cs">
+      <DependentUpon>Amend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="鹏\BackColor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="鹏\BackColor.designer.cs">
+      <DependentUpon>BackColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="鹏\Class1.cs" />
+    <Compile Include="鹏\Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="鹏\Details.designer.cs">
+      <DependentUpon>Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="鹏\Fangtupian.cs" />
+    <Compile Include="鹏\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="鹏\Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="鹏\GM.cs" />
+    <Compile Include="鹏\Modification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="鹏\Modification.designer.cs">
+      <DependentUpon>Modification.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jilu.resx">
+      <DependentUpon>jilu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member_photo_collection.resx">
+      <DependentUpon>Member_photo_collection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="森\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="森\Resources.resx" />
+    <EmbeddedResource Include="雷\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="雷\Registered.resx">
+      <DependentUpon>Registered.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="雷\Retrieve_password.resx">
+      <DependentUpon>Retrieve_password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="鹏\Add friends.resx">
+      <DependentUpon>Add friends.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="鹏\Amend.resx">
+      <DependentUpon>Amend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="鹏\BackColor.resx">
+      <DependentUpon>BackColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="鹏\Details.resx">
+      <DependentUpon>Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="鹏\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\600x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t01d9ba7c36479e44c5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ截图20181217133800.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ截图20181217133821.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ截图20181217164637.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ截图20181217165531.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ截图20181217165555.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ截图20181217165621.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ截图20181217165639.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ截图20181217165746.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ截图20181217165805.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ截图20181217165852.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ截图20181221130822.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e556bfe81ea250b5853610f184c78b95.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t01b5b8511e4fa9b0f1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+    <Content Include="Resources\11324268_1439821637570.jpg" />
+    <None Include="Resources\16.jpg" />
+    <Content Include="Resources\1927076_1421331880670_800x600.jpg" />
+    <None Include="Resources\QQ截图201812251531361.png" />
+    <None Include="Resources\截图201812251512371.png" />
+    <None Include="Resources\201505110533582951.jpg" />
+    <None Include="Resources\1927076_1421331880670_800x6001.jpg" />
+    <Content Include="Resources\20150511053358295.jpg" />
+    <None Include="Resources\237_100.gif" />
+    <Content Include="Resources\24206642_103123707037_2.jpg" />
+    <Content Include="Resources\24468106_151804779000_2.jpg" />
+    <Content Include="Resources\QQ图片20181123144706.jpg" />
+    <None Include="Resources\QQ图片20181226085745.png" />
+    <None Include="Resources\QQ截图20181023112202.png" />
+    <Content Include="Resources\QQ截图20181221205249.png" />
+    <None Include="Resources\QQ截图201812212052491.png" />
+    <Content Include="Resources\QQ截图20181221205703.png" />
+    <Content Include="Resources\QQ截图20181225152920.png" />
+    <Content Include="Resources\QQ截图20181225153136.png" />
+    <Content Include="Resources\t0127d495eec8aad39b.jpg" />
+    <Content Include="Resources\截图20181225151134.png" />
+    <None Include="Resources\截图201812251511341.png" />
+    <Content Include="Resources\截图20181225151237.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
